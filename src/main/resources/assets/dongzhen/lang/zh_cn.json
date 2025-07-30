@@ -1,4 +1,5 @@
 {
   "item.dongzhen.netherite_carrot" : "下界合金胡萝卜",
-  "itemGroup.dongzhen_group" : "狐组"
+  "itemGroup.dongzhen_group" : "狐组",
+  "carrot_block": "胡萝卜方块"
 }
