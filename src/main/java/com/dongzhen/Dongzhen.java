@@ -1,5 +1,7 @@
 package com.dongzhen;
 
+import com.dongzhen.item.ModItemGroups;
+import com.dongzhen.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -14,11 +16,9 @@ public class Dongzhen implements ModInitializer {
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	@Override
-	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
-
+	public void onInitialize() { // run when minecraft start
+		ModItems.register_MOD_Items();
+		ModItemGroups.register_my_group();
 		LOGGER.info("Hello Fabric world!");
 	}
 }
