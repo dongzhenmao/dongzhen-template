@@ -1,5 +1,5 @@
 {
   "item.dongzhen.netherite_carrot" : "netherite_carrot",
   "itemGroup.dongzhen_group" : "dongzhen_group",
-  "carrot_block" : "carrot_block"
+  "block.dongzhen.carrot_block" : "carrot_block"
 }
