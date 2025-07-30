@@ -11,9 +11,9 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
     private static void register_block_item(String id, Block block) { // 照抄源代码改
-        BlockItem item = Registry.register(Registries.ITEM, Identifier.of(Dongzhen.MOD_ID, id), new BlockItem(block, new Item.Settings()));
+        Item item = Registry.register(Registries.ITEM, Identifier.of(Dongzhen.MOD_ID, id), new BlockItem(block, new Item.Settings()));
         if (item instanceof BlockItem) {
-            item.appendBlocks(Item.BLOCK_ITEMS, item);
+            ((BlockItem) item).appendBlocks(Item.BLOCK_ITEMS, item);
         }
     }
 
