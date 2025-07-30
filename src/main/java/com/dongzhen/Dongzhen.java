@@ -7,6 +7,8 @@ import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import static com.dongzhen.block.ModBlocks.register_mod_blocks;
+
 public class Dongzhen implements ModInitializer {
 	public static final String MOD_ID = "dongzhen";
 
@@ -18,6 +20,7 @@ public class Dongzhen implements ModInitializer {
 	@Override
 	public void onInitialize() { // run when minecraft start
 		ModItems.register_MOD_Items();
+		register_mod_blocks();
 		ModItemGroups.register_my_group();
 		LOGGER.info("Hello Fabric world!");
 	}

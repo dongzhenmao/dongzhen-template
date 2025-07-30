@@ -1,7 +1,7 @@
 package com.dongzhen.item;
 
 import com.dongzhen.Dongzhen;
-import net.minecraft.block.Blocks;
+import com.dongzhen.block.ModBlocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -16,6 +16,7 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModItems.NETHERITE_CARROT))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.NETHERITE_CARROT);
+                        entries.add(ModBlocks.CARROT_BLOCK);
                     }).build());
 
     public static void register_my_group() {
